@@ -1,0 +1,29 @@
+{
+    "name": "cept/cept-gallery",
+    "description": "Gallery module for ZF2.",
+    "license": "BSD-3-Clause",
+    "type": "application",
+    "keywords": [
+        "zf2", "gallery", "cept"
+    ],
+    "homepage": "https://github.com/mech7/CeptGallery",
+    "authors": [
+        {
+            "name": "Chris de Kok",
+            "email": "chris.de.kok@gmail.com",
+            "homepage": "http://con.cept.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "CeptGallery": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
