@@ -16,7 +16,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zendframework": "2.*",
+        "solarium/solarium": "dev-develop"
     },
     "autoload": {
         "psr-0": {
