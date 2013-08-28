@@ -65,7 +65,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'CeptGallery\Controller\Index' => 'CeptGallery\Controller\IndexController'
+            'CeptGallery\Controller\Index' => 'CeptGallery\Controller\IndexController',
+            'CeptGallery\Controller\Console' => 'CeptGallery\Controller\ConsoleController',
         ),
     ),
     'view_manager' => array(
@@ -77,6 +78,15 @@ return array(
     'console' => array(
         'router' => array(
             'routes' => array(
+                'list-users' => array(
+                    'options' => array(
+                        'route'    => 'indexer <path>',
+                        'defaults' => array(
+                            'controller' => 'CeptGallery\Controller\Console',
+                            'action'     => 'indexer'
+                        )
+                    )
+                )
             ),
         ),
     ),
