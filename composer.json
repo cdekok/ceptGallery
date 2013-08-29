@@ -18,7 +18,7 @@
         "php": ">=5.4.0",
         "zendframework/zendframework": "2.*",
         "solarium/solarium": "3.*",
-        "cept/file": "dev-master"
+        "cept/cept": "dev-master"
     },
     "autoload": {
         "psr-0": {
