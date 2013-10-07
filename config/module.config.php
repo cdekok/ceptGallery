@@ -1,12 +1,12 @@
 <?php
 return array(
     'ceptGallery' => array(
-        'solr' => array(
-            'host' => 'http://localhost',
-            'path' => '/solr/',
-            'core' => 'gallery',
-            'port' => 8983,
-        )
+        'elasticSearch' => array(
+            'hosts' =>
+                array (
+                    '172.17.0.3:9200',
+            ),
+        ),
     ),
     'router' => array(
         'routes' => array(

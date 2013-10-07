@@ -29,9 +29,9 @@ class ConsoleController extends AbstractActionController
     {
         $request = $this->getRequest();
         $path = $request->getParam('path');
-        $solr = $this->getServiceLocator()->get('Config')['ceptGallery']['solr'];
-        $solarium = new \Solarium\Client(['endpoint' => $solr]);
-        $indexer = new \CeptGallery\Model\Indexer\SolrIndexer($solarium);
+        $params = $this->getServiceLocator()->get('Config')['ceptGallery']['elasticSearch'];
+        $client = new \Elasticsearch\Client($params);
+        $indexer = new \CeptGallery\Model\Indexer\ElasticsearchIndexer($client);
         $indexer->index($path);
         return $path.PHP_EOL;
     }
