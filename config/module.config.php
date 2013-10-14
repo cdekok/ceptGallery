@@ -4,7 +4,7 @@ return array(
         'elasticSearch' => array(
             'hosts' =>
                 array (
-                    '172.17.0.3:9200',
+                    'localhost:9200',
             ),
         ),
     ),
